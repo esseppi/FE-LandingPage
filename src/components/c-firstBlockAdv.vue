@@ -191,7 +191,7 @@
     <div class="blocco4">
       <div class="su1">
         <img
-          src="../assets/images/image2block2.jpeg"
+          src="../assets/images/last.jpeg"
           class="img-fluid"
           alt=""
           srcset=""
