@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$block-size: 540px;
+
+@font-face {
+    font-family: 'merryweather';
+    src: url("./assets/font/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'miller';
+    src: url("./assets/font/Miller-Display_30501.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url("./assets/font/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("./assets/font/Montserrat-Regular.ttf") format("truetype");
+}
