@@ -91,6 +91,7 @@ export default {
   width: 25%;
   height: 40%;
   min-height: 200px;
+  max-height: 350px;
   right: 0px;
   bottom: 0;
 }
@@ -98,6 +99,7 @@ export default {
   align-self: flex-end;
   position: relative;
   height: 100%;
+  min-height: 250px;
   width: 100%;
 }
 .advertise-content {
