@@ -487,7 +487,7 @@ export default {
     align-items: center;
     justify-content: center;
     img {
-      filter: contrast(0.5);
+      filter: brightness(0.5);
     }
 
     .img-content {
@@ -509,7 +509,7 @@ export default {
   }
   .suMany:hover img {
     transform: scale(1.1);
-    filter: contrast(0.5);
+    filter: brightness(50%);
   }
   .suMany:hover .imgCont {
     display: block;
