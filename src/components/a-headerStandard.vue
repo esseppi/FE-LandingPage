@@ -37,7 +37,10 @@
           <div class="modal-body text-center">
             <ul class="drop-ul">
               <li class="drop-item" v-for="(name, i) in menu" :key="i">
-                <a class="dropdown-item me-3" href="#">
+                <a
+                  class="dropdown-item me-3 d-flex align-items-center justify-content-between"
+                  href="#"
+                >
                   {{ name }}
                   <i :class="icons[i]"></i>
                 </a>
@@ -84,6 +87,9 @@ $H-outside: 15px;
   padding: 0;
   .drop-item {
     line-height: 2rem;
+  }
+  .dropdown-item {
+    font-family: "montserrat-bold";
   }
   .dropdown-item:hover {
     color: #cec4b4;

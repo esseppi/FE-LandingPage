@@ -214,6 +214,25 @@
                 alt=""
                 srcset=""
               />
+              <div class="imgCont">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Free</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      $0<small class="text-muted fw-light">/mo</small>
+                    </h1>
+
+                    <button
+                      type="button"
+                      class="w-100 btn btn-lg btn-outline-dark"
+                    >
+                      Sign up for free
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col">
@@ -440,7 +459,6 @@ export default {
     }
   }
 }
-
 .blocco4 {
   display: flex;
   $blockHeight: 650px;
@@ -493,9 +511,21 @@ export default {
     transform: scale(1.1);
     filter: contrast(0.5);
   }
+  .suMany:hover .imgCont {
+    display: block;
+  }
   .suMany {
+    position: relative;
     overflow: hidden;
     height: calc($blockHeight / 2);
+    .imgCont {
+      display: none;
+      transition: transform 5s;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 100000;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
