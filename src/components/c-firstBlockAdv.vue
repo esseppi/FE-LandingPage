@@ -93,7 +93,7 @@
           </div>
         </div>
         <!-- CAROSELLO -->
-        <div class="second">
+        <div class="second p-0 p-sm-3">
           <div class="cont">
             <div
               id="carouselControls"
@@ -326,10 +326,10 @@ export default {
   },
   methods: {
     changeSlide(direction) {
-      if (this.slideIndex == this.slides.length - 1 && direction == "next") {
+      if (this.slideIndex == this.slides.length && direction == "next") {
         this.slideIndex = 0;
       } else if (this.slideIndex == 0 && direction == "prev") {
-        this.slideIndex = this.slides.length;
+        this.slideIndex = this.slides.length - 1;
       }
       if (direction == "next") {
         this.slideIndex++;
@@ -458,7 +458,6 @@ export default {
     .second {
       display: flex;
       position: relative;
-      padding-bottom: 3rem;
       width: 50%;
       background-color: #f7f9f8;
 
@@ -792,6 +791,8 @@ export default {
         display: flex;
         flex-direction: column-reverse;
         position: static;
+        margin-bottom: 0.8rem;
+        padding: 0.8rem;
         padding: 3rem;
         width: 100%;
         background-color: #f7f9f8;
