@@ -153,9 +153,25 @@
               <div>PRESS</div>
               <div class="text">18 SETTEMBRE 2015</div>
             </div>
-            <div class="title">
-              Most Important <br />
-              Days on Watchlab
+            <div
+              id="carouselControls"
+              class="carousel slide title"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <li class="carousel-item active">
+                  Most Important <br />
+                  Days on Watchlab
+                </li>
+                <li class="carousel-item">
+                  Most Important <br />
+                  Days on WatchlabDDD
+                </li>
+                <li class="carousel-item">
+                  Most Important <br />
+                  Days on Watchlab
+                </li>
+              </div>
             </div>
             <div class="carouselArrow mt-5">
               <button
@@ -275,6 +291,20 @@ export default {
   name: "App",
   data() {
     return {
+      slides: [
+        {
+          slide: "image3block2.jpeg",
+          text: "Press from Watch Lab Studio",
+        },
+        {
+          slide: "image3block2.jpeg",
+          text: "Press from Watch Lab Studio",
+        },
+        {
+          slide: "image3block2.jpeg",
+          text: "Press from Watch Lab Studio",
+        },
+      ],
       carouselImages: ["../assets/images/image3block2.jpeg"],
       title1: "History and",
       title2: "Patriarcal season",
@@ -291,6 +321,9 @@ export default {
       content4:
         "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain trouble",
     };
+  },
+  methods: {
+    changeSlide() {},
   },
 };
 </script>

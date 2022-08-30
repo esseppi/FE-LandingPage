@@ -1,12 +1,7 @@
 <template>
   <div class="hero px-4 py-5 text-center text-white">
     <!-- <div class="background-hero"></div> -->
-    <img
-      src="../assets/images/hero_img.jpeg"
-      class="img-fluid heroImg first"
-      alt=""
-      srcset=""
-    />
+    <img :src="current" class="img-fluid heroImg first" alt="" srcset="" />
     <!-- CENTRAL CONTENT -->
     <div class="content">
       <div class="content-top">LONDON COLLECTION SEASON</div>
@@ -26,18 +21,13 @@
 
     <!-- OROLOGIO ADV -->
     <div class="bol">
-      <img
-        src="../assets/images/orologio.jpeg"
-        class="heroImg2"
-        alt=""
-        srcset=""
-      />
+      <img :src="next" class="heroImg2" alt="" srcset="" />
       <div class="advertise">
         <div class="advertise-content text-start">
           The Path to Success <br />
           with Watchlab
         </div>
-        <div class="btn-next">Next ></div>
+        <div @click="nextImage()" class="btn-next">Next ></div>
       </div>
     </div>
   </div>
@@ -45,6 +35,28 @@
 <script>
 export default {
   name: "HeroStand",
+  data() {
+    return {
+      index: 1,
+      current: "",
+      next: "",
+      images: ["hero_img.jpeg", "orologio.jpeg", "hero_img.jpeg"],
+    };
+  },
+  methods: {
+    nextImage() {
+      if (this.images.length - 1 == this.index) {
+        this.index = 0;
+      }
+      this.current = this.images[this.index];
+      this.next = this.images[this.index + 1];
+      this.index++;
+    },
+  },
+  created() {
+    this.current = this.images[0];
+    this.next = this.images[1];
+  },
 };
 </script>
 <style scoped lang="scss">
@@ -56,6 +68,7 @@ export default {
   align-content: center;
   position: relative;
   height: 80vh;
+  min-height: 600px;
 }
 
 #mybtn {
