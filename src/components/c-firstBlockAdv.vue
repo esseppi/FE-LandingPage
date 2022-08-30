@@ -98,6 +98,7 @@
             <div
               id="carouselControls"
               class="carousel slide"
+              data-interval="false"
               data-bs-ride="carousel"
             >
               <div class="carousel-inner">
@@ -340,8 +341,8 @@ export default {
     },
   },
   created() {
-    this.title = this.slides[this.slideIndex].text;
-    this.data = this.slides[this.slideIndex].data;
+    this.title = this.slides[0].text;
+    this.data = this.slides[0].data;
   },
 };
 </script>
