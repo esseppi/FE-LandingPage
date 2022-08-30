@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid container-md mb-0 mb-md-5">
+  <div class="mb-0">
     <div class="top-footer text-center">
       <img class="myimg img-fluid" src="../assets/images/getinTouch.jpeg" />
       <div class="cont">

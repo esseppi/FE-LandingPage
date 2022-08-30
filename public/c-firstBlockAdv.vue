@@ -284,22 +284,22 @@ export default {
           text: "Press from Watch Lab Studio1",
         },
         {
-          slide: "b1.png",
+          slide: "image3block2.jpeg",
           data: "16 settembre 2016",
           text: "Press from Watch Lab Studio2",
         },
         {
-          slide: "b2.png",
+          slide: "image3block2.jpeg",
           data: "17 settembre 2017",
           text: "Press from Watch Lab Studio3",
         },
         {
-          slide: "b3.png",
+          slide: "image3block2.jpeg",
           data: "17 settembre 2017",
           text: "Press from Watch Lab Studio4",
         },
         {
-          slide: "b4.png",
+          slide: "image3block2.jpeg",
           data: "17 settembre 2017",
           text: "Press from Watch Lab Studio5",
         },
@@ -328,7 +328,7 @@ export default {
       if (this.slideIndex == this.slides.length - 1 && direction == "next") {
         this.slideIndex = 0;
       } else if (this.slideIndex == 0 && direction == "prev") {
-        this.slideIndex = this.slides.length;
+        this.slideIndex = this.slides.length - 1;
       }
       if (direction == "next") {
         this.slideIndex++;
