@@ -40,7 +40,12 @@ export default {
       index: 1,
       current: "",
       next: "",
-      images: ["hero_img.jpeg", "orologio.jpeg", "hero_img.jpeg"],
+      images: [
+        "hero_img.jpeg",
+        "orologio.jpeg",
+        "imgnight.png",
+        "imgwinter.png",
+      ],
     };
   },
   methods: {
